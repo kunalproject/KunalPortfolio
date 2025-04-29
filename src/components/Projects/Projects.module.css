@@ -1,0 +1,182 @@
+.projectsSection {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.projectsSection h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.projectList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.projectItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.projectHeader:hover {
+    background-color: #f0f0f0;
+}
+
+.projectInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.projectInfo h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.toggleButton {
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+.toggleButton.open {
+    transform: rotate(180deg);
+}
+
+.projectDescription {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.projectDescription p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.projectLink {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.projectLink:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .projectsSection {
+        max-width: 85%;
+        /* Increase width for smaller screens */
+        padding: 30px 15px;
+        /* Reduce padding */
+    }
+
+    .projectsSection h1 {
+        font-size: 1.8rem;
+        /* Reduce font size */
+    }
+
+    .projectInfo h2 {
+        font-size: 16px;
+        /* Reduce font size */
+    }
+
+    .projectImage {
+        width: 40px;
+        /* Reduce image size */
+        height: 40px;
+    }
+
+    .projectDescription p {
+        font-size: 13px;
+        /* Reduce font size */
+    }
+
+    .projectLink {
+        padding: 6px 12px;
+        /* Reduce button padding */
+        font-size: 13px;
+        /* Reduce button font size */
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .projectsSection {
+        max-width: 95%;
+        /* Further increase width for mobile */
+        padding: 20px 10px;
+        /* Further reduce padding */
+    }
+
+    .projectsSection h1 {
+        font-size: 1.5rem;
+        /* Further reduce font size */
+    }
+
+    .projectInfo h2 {
+        font-size: 14px;
+        /* Further reduce font size */
+    }
+
+    .projectImage {
+        width: 30px;
+        /* Further reduce image size */
+        height: 30px;
+    }
+
+    .projectDescription p {
+        font-size: 12px;
+        /* Further reduce font size */
+    }
+
+    .projectLink {
+        padding: 5px 10px;
+        /* Further reduce button padding */
+        font-size: 12px;
+        /* Further reduce button font size */
+    }
+
+    .projectHeader {
+        padding: 10px;
+        /* Reduce header padding */
+    }
+
+    .projectDescription {
+        padding: 10px;
+        /* Reduce description padding */
+    }
+}

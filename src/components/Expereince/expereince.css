@@ -1,0 +1,143 @@
+/* ExperienceSection.css */
+
+/* Base styles */
+.experience-section {
+    max-width: 65%;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.experience-section h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.company-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.toggle-button {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.open {
+    transform: rotate(180deg);
+}
+
+.experience-description {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.experience-description p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .experience-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .company-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .company-info p {
+        font-size: 0.95rem;
+    }
+
+    .experience-description p {
+        font-size: 0.95rem;
+    }
+.experience-section {
+    max-width: 85%;
+padding: 30px 15px;
+}
+}
+
+@media (max-width: 480px) {
+    .experience-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .company-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .company-info p {
+        font-size: 0.9rem;
+    }
+
+    .experience-description p {
+        font-size: 0.9rem;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+.experience-section {
+    max-width: 95%;
+    padding: 20px 10px;
+
+}
+}

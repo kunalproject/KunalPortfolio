@@ -1,0 +1,70 @@
+/* AppContacts.css */
+
+/* Base styles */
+.app-contacts {
+    text-align: center;
+    padding: 20px;
+    max-width: 65%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-contacts h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.app-icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.app-icon {
+    font-size: 2.5rem;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.app-icon:hover {
+    color: #007bff;
+    /* Change color on hover */
+    transform: scale(1.2);
+    /* Slightly enlarge on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .app-contacts h1 {
+        font-size: 1.8rem;
+    }
+
+    .app-icon {
+        font-size: 2rem;
+    }
+.app-contacts {
+    max-width: 85%;
+    padding: 30px 15px;
+
+}
+}
+
+@media (max-width: 480px) {
+    .app-contacts h1 {
+        font-size: 1.5rem;
+    }
+
+    .app-icon {
+        font-size: 1.5rem;
+    }
+.app-contacts {
+    max-width: 95%;
+    padding: 20px 10px;
+
+}
+}

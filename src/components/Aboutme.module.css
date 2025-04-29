@@ -1,0 +1,111 @@
+/* AboutMe.module.css */
+
+.aboutMe {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutMe h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.skill {
+    padding: 8px 16px;
+    font-size: 1rem;
+    /* Increased font size */
+    font-weight: 500;
+    /* Added a little boldness */
+    color: #333;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    font-size: 1.1rem;
+    /* Increased font size */
+    font-weight: 500;
+    /* Added a little boldness */
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .aboutMe h1 {
+        font-size: 1.8rem;
+    }
+
+    .skill {
+        font-size: 0.9rem;
+        /* Adjusted for smaller screens */
+        font-weight: 500;
+        /* Consistent boldness */
+        padding: 6px 12px;
+    }
+
+    .description {
+        font-size: 1rem;
+        /* Adjusted for smaller screens */
+        font-weight: 500;
+        /* Consistent boldness */
+    }
+.aboutMe {
+    max-width: 85%;
+    padding: 30px 15px;
+
+}
+}
+
+@media (max-width: 480px) {
+    .aboutMe h1 {
+        font-size: 1.5rem;
+    }
+
+    .skill {
+        font-size: 0.8rem;
+        /* Adjusted for smaller screens */
+        font-weight: 500;
+        /* Consistent boldness */
+        padding: 5px 10px;
+    }
+
+    .description {
+        font-size: 0.95rem;
+        /* Adjusted for smaller screens */
+        font-weight: 500;
+        /* Consistent boldness */
+    }
+.aboutMe {
+    max-width: 95%;
+    padding: 20px 10px;
+
+}
+}

@@ -1,0 +1,164 @@
+/* DSAStatsSection.module.css */
+
+.dsaStatsSection {
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 32px;
+}
+
+.dsaStatsSection h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.statsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.circularChart {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
+.circleBackground {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.circleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.circleText span {
+    display: block;
+}
+
+.circleText span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.circleText span:last-child {
+    font-size: 1rem;
+    color: #555;
+}
+
+.statsLabels {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.easy {
+    background-color: #06d6a0;
+    /* Green for easy */
+}
+
+.dot.medium {
+    background-color: #ffd166;
+    /* Yellow for medium */
+}
+
+.dot.hard {
+    background-color: #ff6b6b;
+    /* Red for hard */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .dsaStatsSection h1 {
+        font-size: 1.8rem;
+        margin-top: 8px;
+    }
+
+    .statsContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .circularChart {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circleText span:first-child {
+        font-size: 1.2rem;
+    }
+
+    .circleText span:last-child {
+        font-size: 0.9rem;
+    }
+.dsaStatsSection {
+    max-width: 85%;
+    padding: 30px 15px;
+}
+}
+
+@media (max-width: 480px) {
+    .dsaStatsSection h1 {
+        font-size: 1.5rem;
+    }
+
+    .circularChart {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circleText span:first-child {
+        font-size: 1rem;
+    }
+
+    .circleText span:last-child {
+        font-size: 0.8rem;
+    }
+.dsaStatsSection {
+    max-width: 95%;
+    padding: 20px 10px;
+}
+}
