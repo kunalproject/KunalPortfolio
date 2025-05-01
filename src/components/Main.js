@@ -11,8 +11,8 @@ const Main = () => {
     const fetchPortfolio = async () => {
         setLoading(true);
       try {
-        // const dsa=await axios.get(process.env.REACT_APP_DSA_STATS);
-        // setdsa_stats(dsa.data.stats);
+        const dsa=await axios.get(process.env.REACT_APP_DSA_STATS);
+        setdsa_stats(dsa.data.stats);
 
         setPortfolioData(profile_data);
 
