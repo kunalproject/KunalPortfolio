@@ -80,7 +80,7 @@
 
       leetcode_id :"kunalgambhir210",
 
-        gfg_id :"kunalgambhir",
+        // gfg_id :"kunalgambhir",
 
         about  : "Hi, I'm Kunal , an aspiring Software Developer currently in my 8th semester of B.Tech in Electronics and Communication Engineering     (ECE) at USICT. I have a strong passion for Web Development and Data Structures & Algorithms (DSA). Over time, I have worked on several MERN stack projects, building responsive and dynamic applications. My expertise includes React.js, Node.js, MongoDB, SQL, and JavaScript, and I enjoy solving complex problems through efficient code.",
 
